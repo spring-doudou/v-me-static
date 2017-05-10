@@ -336,7 +336,7 @@ a:hover {
 
 section.section {
     margin: 0;
-    padding: 80px 0 60px 0;
+    padding: 0px 0 60px 0;
 }
 
 .bg-white {
@@ -1063,7 +1063,7 @@ Vertical navigation
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.8);
+        /*background: rgba(0, 0, 0, 0.8);*/
         -webkit-transform: translateX(100%);
         -moz-transform: translateX(100%);
         -ms-transform: translateX(100%);
@@ -1142,11 +1142,11 @@ Vertical navigation
 
     .cd-vertical-nav a::before {
         /* filled circle */
-        top: 0;
-        height: 32px;
-        width: 32px;
+        top: 0px;
+        height: 52px;
+        width: 52px;
         border-radius: 50%;
-        background: #AAA;
+        background: #fddd75;
         -webkit-transform: translateX(-50%) scale(0.25);
         -moz-transform: translateX(-50%) scale(0.25);
         -ms-transform: translateX(-50%) scale(0.25);
@@ -1156,13 +1156,28 @@ Vertical navigation
         -moz-transition: -moz-transform 0.4s, background-color 0.2s;
         transition: transform 0.4s, background-color 0.2s;
     }
+    .cd-vertical-nav #nav0::after{
+        background: url(../image/nav0.png) center no-repeat;
+    }
+    .cd-vertical-nav #nav1::after{
+        background: url(../image/nav1.png) center no-repeat;
+    }
+    .cd-vertical-nav #nav2::after{
+        background: url(../image/nav2.png) center no-repeat;
+    }
+    .cd-vertical-nav #nav3::after{
+        background: url(../image/nav3.png) center no-repeat;
+    }
+    .cd-vertical-nav #nav4::after{
+        background: url(../image/nav4.png) center no-repeat;
+    }
 
     .cd-vertical-nav a::after {
         /* icon */
         opacity: 0;
         top: 8px;
-        height: 16px;
-        width: 16px;
+        height: 52px;
+        width: 52px;
         /*    background: url(../img/cd-nav-icons.svg) no-repeat;*/
         -webkit-transform: translateX(-50%) scale(0);
         -moz-transform: translateX(-50%) scale(0);
