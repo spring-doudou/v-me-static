@@ -1035,6 +1035,7 @@ Vertical navigation
     bottom: 0;
 }
 
+
 @media only screen and (min-width: 800px) {
     .cd-vertical-nav {
         /* reset style */
@@ -1156,6 +1157,7 @@ Vertical navigation
         -moz-transition: -moz-transform 0.4s, background-color 0.2s;
         transition: transform 0.4s, background-color 0.2s;
     }
+
     .cd-vertical-nav #nav0::after{
         background: url(../image/nav0.png) center no-repeat;
     }
@@ -1178,6 +1180,7 @@ Vertical navigation
         top: 8px;
         height: 52px;
         width: 52px;
+
         /*    background: url(../img/cd-nav-icons.svg) no-repeat;*/
         -webkit-transform: translateX(-50%) scale(0);
         -moz-transform: translateX(-50%) scale(0);
@@ -1190,7 +1193,7 @@ Vertical navigation
     }
 
     .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
-        background-color: #79CDC0;
+        /*background-color: #79CDC0;*/
     }
 
     .cd-vertical-nav li:first-of-type a::after {
@@ -1333,6 +1336,7 @@ Vertical navigation
         transform: translateX(-50%) scale(1);
         /* set a rotation to fix bug on Firefox - http://gielberkers.com/how-to-fix-shaking-css-transitions-in-firefox/ */
         -moz-transform: translateX(-50%) scale(1) rotate(0.02deg);
+        background:none;
     }
 
     .no-touch .cd-vertical-nav:hover a::after, .touch .cd-vertical-nav a::after {
