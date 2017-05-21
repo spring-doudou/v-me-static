@@ -124,7 +124,7 @@
                 </h1>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav skrollable skrollable-between" style="margin-top: 2px;">
+                <ul id="menu" class="nav navbar-nav skrollable skrollable-between" style="margin-top: 2px;">
                     <li class="active"><a class="smooth" href="#section-home">HOME</a></li>
                     <li><a class="smooth" href="#section-product">产品介绍</a></li>
                     <li><a class="smooth" href="#section-advantage">甄选标准</a></li>
@@ -132,7 +132,6 @@
                     <li><a class="smooth" href="#section-paterner">联系我们</a></li>
                 </ul>
             </div>
-
             <!--/.navbar-collapse -->
         </div>
     </div>
@@ -149,21 +148,21 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
 
-        <div class="item active" >
+        <div class="item active">
             <img src="./image/lunbo1.png" style="border:none;width: 1280px;height: 610px;margin: 0 auto;">
         </div>
         <div class="item">
             <img src="./image/lunbo2.png" style="border:none;width: 1280px;height: 610px; margin: 0 auto;">
         </div>
     </div>
-    <div id="mice">
-        <a href="#section-product" class="smooth">
-            <div>
-                <span class="unu"></span>
-                <span class="doi"></span>
-            </div>
-        </a>
-    </div>
+    <!--<div id="mice">-->
+    <!--<a href="#section-product" class="smooth">-->
+    <!--<div>-->
+    <!--<span class="unu"></span>-->
+    <!--<span class="doi"></span>-->
+    <!--</div>-->
+    <!--</a>-->
+    <!--</div>-->
 </section>
 
 <div style="background-image: url('./image/line.png');width: 100%; height: 6px;min-width:1280px;">
@@ -178,11 +177,14 @@
         display: -webkit-flex;
         display: flex;
     }
+
     .mycol {
     }
+
     .myfluid {
         flex: 1;
     }
+
     .myfixed {
 
     }
@@ -193,26 +195,27 @@
         <div class="row">
             <div class="mygrid">
                 <div class="mycol myfluid" style=" background: url(./image/caodi.png)"></div>
-                <div class="mycol myfixed" style="width:1588px;height: 578px; padding-top: 100px; background: url(image/section-bg2.png)">
+                <div class="mycol myfixed"
+                     style="width:1588px;height: 578px; padding-top: 100px; background: url(image/section-bg2.png)">
                     <!--<div class="row">-->
-                        <!--<div style="width: 500px ;height: 160px;margin-left: 800px">-->
-                            <!--<h2 style="margin-bottom:20px;">-->
-                                <!--<span style="font-size: 29px;font-family: 微软雅黑;color: rgb(34, 34, 34);letter-spacing: 4px">原蜜宝宝——当原蜜邂逅巧克力</span>-->
-                            <!--</h2>-->
-                        <!--</div>-->
+                    <!--<div style="width: 500px ;height: 160px;margin-left: 800px">-->
+                    <!--<h2 style="margin-bottom:20px;">-->
+                    <!--<span style="font-size: 29px;font-family: 微软雅黑;color: rgb(34, 34, 34);letter-spacing: 4px">原蜜宝宝——当原蜜邂逅巧克力</span>-->
+                    <!--</h2>-->
+                    <!--</div>-->
                     <!--</div>-->
                     <!--<div class="row">-->
-                        <!--<div style="width: 380px ;height: 160px;margin-left:310px;margin-top: -20px">-->
-                            <!--<br>-->
-                            <!--<h3 style="margin-bottom:20px;text-indent:43px; line-height:130%">-->
-                                <!--<span style="font-size: 21px;font-family: 微软雅黑;color: rgb(34, 34, 34);letter-spacing: 0;font-weight: normal">&quot; </span><span style="font-size: 21px;font-family: 微软雅黑;color: rgb(34, 34, 34);letter-spacing: 0;font-weight: normal">当甜甜的原蜜邂逅浓厚的酸奶，再加上丝滑可口的可可脂，美味不言而喻。配上萌萌哒表情包，小蜜蜂分你一份快乐。 &quot;</span>-->
-                            <!--</h3>-->
-                        <!--</div>-->
-                        <!--<div style="width: 300px ;height: 160px;margin-left:980px;margin-top: -190px;">-->
-                            <!--<p style="text-indent:37px;line-height:190%">-->
-                                <!--<span style="font-size:16px;line-height:150%;font-family: 宋体;color:#777777;letter-spacing:1px;font-weight:normal">以天然健康高品质为甄选标准，严选每一种原料。蜂蜜，不加工待其自然成熟，经过层层指标检测筛选，只要最健康存粹的大自然味道。无糖酸奶粉，采用鲜奶72小时低温发酵，经喷雾干燃而成，不含任何添加剂，滋味更真实浓厚。可可脂优选进口原料，保证100%纯度。</span>-->
-                            <!--</p>-->
-                        <!--</div>-->
+                    <!--<div style="width: 380px ;height: 160px;margin-left:310px;margin-top: -20px">-->
+                    <!--<br>-->
+                    <!--<h3 style="margin-bottom:20px;text-indent:43px; line-height:130%">-->
+                    <!--<span style="font-size: 21px;font-family: 微软雅黑;color: rgb(34, 34, 34);letter-spacing: 0;font-weight: normal">&quot; </span><span style="font-size: 21px;font-family: 微软雅黑;color: rgb(34, 34, 34);letter-spacing: 0;font-weight: normal">当甜甜的原蜜邂逅浓厚的酸奶，再加上丝滑可口的可可脂，美味不言而喻。配上萌萌哒表情包，小蜜蜂分你一份快乐。 &quot;</span>-->
+                    <!--</h3>-->
+                    <!--</div>-->
+                    <!--<div style="width: 300px ;height: 160px;margin-left:980px;margin-top: -190px;">-->
+                    <!--<p style="text-indent:37px;line-height:190%">-->
+                    <!--<span style="font-size:16px;line-height:150%;font-family: 宋体;color:#777777;letter-spacing:1px;font-weight:normal">以天然健康高品质为甄选标准，严选每一种原料。蜂蜜，不加工待其自然成熟，经过层层指标检测筛选，只要最健康存粹的大自然味道。无糖酸奶粉，采用鲜奶72小时低温发酵，经喷雾干燃而成，不含任何添加剂，滋味更真实浓厚。可可脂优选进口原料，保证100%纯度。</span>-->
+                    <!--</p>-->
+                    <!--</div>-->
                     <!--</div>-->
                 </div>
                 <div class="mycol myfluid" style="background: url(./image/caodi.png) "></div>
@@ -349,7 +352,8 @@
         <div style="float:left;width: 728px; height: 600px;padding-top: 42px;">
             <div style="border: 1px solid #714e27;width: 728px; height: 526px">
                 <div style="height: 133px; width: 100%;padding: 5px">
-                    <p>原蜜宝宝所采用的的蜜种为精挑细选的洋槐蜂蜜。洋槐蜂蜜又名刺槐蜂蜜、槐花蜂蜜，其特点为颜色浅、味鲜洁、甜而不腻、有洋槐特有的清香味，不易结晶，颜色为水白色，是现行市场上优质高端蜜种。成品洋槐蜜含水量低于20%，远低于国家执行标准的24%的含水量。含水量越低的蜂蜜不仅成熟度更高，而且营养更为丰富，保质时间越长久。蔗糖含量低于3%，蜂蜜中的蔗糖来自于蜜源植物的花蜜，不是人为添加，现行国家标准蜂蜜的蔗糖含量达5%。</p>
+                    <p>
+                        原蜜宝宝所采用的的蜜种为精挑细选的洋槐蜂蜜。洋槐蜂蜜又名刺槐蜂蜜、槐花蜂蜜，其特点为颜色浅、味鲜洁、甜而不腻、有洋槐特有的清香味，不易结晶，颜色为水白色，是现行市场上优质高端蜜种。成品洋槐蜜含水量低于20%，远低于国家执行标准的24%的含水量。含水量越低的蜂蜜不仅成熟度更高，而且营养更为丰富，保质时间越长久。蔗糖含量低于3%，蜂蜜中的蔗糖来自于蜜源植物的花蜜，不是人为添加，现行国家标准蜂蜜的蔗糖含量达5%。</p>
                 </div>
                 <div style="height: 49px; width: 100%; background-color: #473114;">
                     <span style="color: white;float: left;line-height: 49px ;font-size: 30px; font-weight: bold">低于30%</span>
@@ -388,11 +392,11 @@
         </div>
     </div>
     <!--<div class="container-fluid">-->
-        <!--<div class="row">-->
-            <!--<div style="border-left: 2px dashed #714e27;border-right: 2px dashed #714e27;width: 1280px; height: 725px; margin: 0 auto; background: url(./image/case-bg.png) center no-repeat;">-->
+    <!--<div class="row">-->
+    <!--<div style="border-left: 2px dashed #714e27;border-right: 2px dashed #714e27;width: 1280px; height: 725px; margin: 0 auto; background: url(./image/case-bg.png) center no-repeat;">-->
 
-            <!--</div>-->
-        <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 
     <!--</div>-->
 </section>
@@ -401,7 +405,8 @@
     <div style="min-width:1280px;height:640px; width:100%;background-color:#fede6c; border-bottom:2px dashed #674925; border-top:2px dashed #674925; ">
         <div style="padding-top:460px;width: 1280px; height: 640px; margin: 0 auto; background: url(./image/advantage-bg.png) center no-repeat;">
 
-            <p>V&Me 是一个专注于原蜜及原蜜类食品的年轻品牌，秉承以人为本的理念，注重生活品质，传递健康，引领蜜养人生新风尚，致力于打造国内第一原蜜食品品牌。中国早在西周时期已有关于蜂蜜的记载，作为现今世界产蜜第一大国，蜜种丰富，功效齐全，品质上乘，尤其某些蜜种在世界上还有着独一无二的地位。V&Me利用起中国这座天然的庄园，回馈大自然得天独厚的优待，做一位质朴的搬运工，坚持原蜜无加工的原则，按欧标标准严选入市，以纯天然健康的姿态呈现给国人。同时，V&Me联合国内一流科研院校——华东理工大学，以精益求精的态度，进行原蜜类产品研发，从营养学的角度，针对不同年龄群的需求，创造出更符合国人体质的食品。</p>
+            <p>V&Me
+                是一个专注于原蜜及原蜜类食品的年轻品牌，秉承以人为本的理念，注重生活品质，传递健康，引领蜜养人生新风尚，致力于打造国内第一原蜜食品品牌。中国早在西周时期已有关于蜂蜜的记载，作为现今世界产蜜第一大国，蜜种丰富，功效齐全，品质上乘，尤其某些蜜种在世界上还有着独一无二的地位。V&Me利用起中国这座天然的庄园，回馈大自然得天独厚的优待，做一位质朴的搬运工，坚持原蜜无加工的原则，按欧标标准严选入市，以纯天然健康的姿态呈现给国人。同时，V&Me联合国内一流科研院校——华东理工大学，以精益求精的态度，进行原蜜类产品研发，从营养学的角度，针对不同年龄群的需求，创造出更符合国人体质的食品。</p>
         </div>
     </div>
 
@@ -435,25 +440,34 @@
 <section id="section-paterner" class="appear section clearfix">
     <div style="width: 1280px; height: 220px ;margin: 0 auto;padding-top: 24px">
         <ul id="erwema">
+
             <li>
-                <img src="./image/erweima.jpg">
-                <p></p>
-                <p>天猫</p>
+                <a href="http://shop216331941.taobao.com/index.htm" target="_blank">
+                    <img src="./image/taobaoerweima.png">
+                    <p></p>
+                    <p>淘宝店铺</p>
+                </a>
             </li>
             <li>
-                <img src="./image/erweima.jpg">
-                <p></p>
-                <p>天猫</p>
+                <a href="https://weidian.com/?userid=379362499&wfr=wechatpo_keywords_shop" target="_blank">
+                    <img src="./image/weidianerweima.png">
+                    <p></p>
+                    <p>微店</p>
+                </a>
             </li>
             <li>
-                <img src="./image/erweima.jpg">
-                <p></p>
-                <p>天猫</p>
+                <a href="https://mp.weixin.qq.com/mp/getmasssendmsg?__biz=MzI1NDQ5ODQ4NQ==#wechat_webview_type=1&wechat_redirect" target="_blank">
+                    <img src="./image/gongzhonghao.png">
+                    <p></p>
+                    <p>公众号</p>
+                </a>
             </li>
             <li>
-                <img src="./image/erweima.jpg">
-                <p></p>
-                <p>天猫</p>
+                <a href="http://weibo.com/u/6201065499" target="_blank">
+                    <img src="./image/weibo.png">
+                    <p></p>
+                    <p>微博</p>
+                </a>
             </li>
         </ul>
     </div>
@@ -471,21 +485,27 @@
     </div>
 </div>
 <style type="text/css">
-    #erwema{
+    #erwema {
         list-style: none;
         width: 1100px;
-        margin:0 auto;
+        margin: 0 auto;
     }
+
     #erwema li {
         padding-top: 40px;
         display: inline;
-        text-align:center;
+        text-align: center;
         width: 180px;
-        float:left;
+        float: left;
         height: 180px;
-        border:1px solid #000;
-        border-radius:20px;
-        margin-left:50px;
+        border: 1px solid #000;
+        border-radius: 20px;
+        margin-left: 50px;
+    }
+
+    #erwema li a {
+        width: 180px;
+        height: 180px;
     }
 </style>
 <!--&lt;!&ndash; footer&ndash;&gt;
@@ -549,6 +569,9 @@
 
 
 
+
+
+
 </script>
 <script id="fs" type="x-shader/x-fragment">
 			uniform sampler2D map;
@@ -564,6 +587,9 @@
 				gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
 
 			}
+
+
+
 
 
 
@@ -665,5 +691,5 @@
 </script>
 
 <a id="scrollUp" href="#header" class="scrollup" style="z-index: 999999; display: none;"><i
-        class="fa fa-chevron-up"></i></a></body>
+        class="fa fa-chevron-up">UP</i></a></body>
 </html>

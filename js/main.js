@@ -292,7 +292,7 @@
             animation: "fade", // Fade, slide, none
             animationInSpeed: 200, // Animation in speed (ms)
             animationOutSpeed: 200, // Animation out speed (ms)
-            scrollText: "<i class='fa fa-chevron-up'></i>", // Text for element, can contain HTML
+            scrollText: "<i class='fa fa-chevron-up'>^</i>", // Text for element, can contain HTML
             scrollTitle: " ", // Set a custom <a> title if required. Defaults to scrollText
             scrollImg: 0, // Set true to use image
             activeOverlay: 0, // Set CSS color to display scrollUp active point, e.g "#00FFFF"
