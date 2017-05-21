@@ -3,7 +3,7 @@
 
     if (Modernizr.mq('only all and (max-width: 1024px)')) {
         isMobile = true;
-        $(".carousel .item").css("height", "350px");
+        $(".carousel .item").css("height", "610px");
         $(".notransition").css("opacity", "1");
         $(".qrcode").css("background", "none");
         $(".vrone").attr("data-toggle", "");
