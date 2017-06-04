@@ -339,112 +339,112 @@
             }
         });
     }
-    /*===================================================================================*/
-    /*	WEIXIN
-     /*===================================================================================*/
-    var wxtitle = "萝卜特甜";
-    var wxdesc = "国内领先的VR+地产解决方案服务商";
-    var wxlink = "http://www.luobotetian.com/"
-    var wximgUrl = "http://www.luobotetian.com/img/weixin.png";
-    $.ajax({
-        async: false,
-        url: 'http://www.luobotetian.com/weixin/jsapi.php?&urlStr=' + encodeURIComponent(window.location.href),
-        type: "GET",
-        dataType: 'json',
-        timeout: 5000,
-        beforeSend: function () {
-        },
-        success: function (json) {
-            wx.config({
-                debug: false,
-                appId: json["appId"],
-                timestamp: json["timestamp"],
-                nonceStr: json["nonceStr"],
-                signature: json["signature"],
-                jsApiList: [
-                    'checkJsApi',
-                    'onMenuShareTimeline',
-                    'onMenuShareAppMessage',
-                    'onMenuShareQQ',
-                    'onMenuShareWeibo',
-                    'onMenuShareQZone'
-                ]
-            });
-
-            wx.ready(function () {
-                wx.onMenuShareAppMessage({
-                    title: wxtitle,
-                    desc: wxdesc,
-                    link: wxlink,
-                    imgUrl: wximgUrl,
-                    trigger: function (res) {
-                    },
-                    success: function (res) {
-                    },
-                    cancel: function (res) {
-                    },
-                    fail: function (res) {
-                    }
-                });
-
-                wx.onMenuShareTimeline({
-                    title: wxdesc,
-                    link: wxlink,
-                    imgUrl: wximgUrl,
-                    trigger: function (res) {
-                    },
-                    success: function (res) {
-                    },
-                    cancel: function (res) {
-                    },
-                    fail: function (res) {
-                    }
-                });
-                wx.onMenuShareQQ({
-                    title: wxdesc, // 分享标题
-                    desc: wxdesc, // 分享描述
-                    link: wxlink, // 分享链接
-                    imgUrl: wximgUrl, // 分享图标
-                    success: function () {
-                        // 用户确认分享后执行的回调函数
-                    },
-                    cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                    }
-                });
-                wx.onMenuShareWeibo({
-                    title: wxdesc, // 分享标题
-                    desc: wxdesc, // 分享描述
-                    link: wxlink, // 分享链接
-                    imgUrl: wximgUrl, // 分享图标
-                    success: function () {
-                        // 用户确认分享后执行的回调函数
-                    },
-                    cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                    }
-                });
-                wx.onMenuShareQZone({
-                    title: wxdesc, // 分享标题
-                    desc: wxdesc, // 分享描述
-                    link: wxlink, // 分享链接
-                    imgUrl: wximgUrl, // 分享图标
-                    success: function () {
-                        // 用户确认分享后执行的回调函数
-                    },
-                    cancel: function () {
-                        // 用户取消分享后执行的回调函数
-                    }
-                });
-            });
-        },
-        complete: function (XMLHttpRequest, textStatus) {
-            console.log("complete:" + textStatus);
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log("error:" + textStatus);
-        }
-    });
+    // /*===================================================================================*/
+    // /*	WEIXIN
+    //  /*===================================================================================*/
+    // var wxtitle = "萝卜特甜";
+    // var wxdesc = "国内领先的VR+地产解决方案服务商";
+    // var wxlink = "http://www.luobotetian.com/"
+    // var wximgUrl = "http://www.luobotetian.com/img/weixin.png";
+    // $.ajax({
+    //     async: false,
+    //     url: 'http://www.luobotetian.com/weixin/jsapi.php?&urlStr=' + encodeURIComponent(window.location.href),
+    //     type: "GET",
+    //     dataType: 'json',
+    //     timeout: 5000,
+    //     beforeSend: function () {
+    //     },
+    //     success: function (json) {
+    //         wx.config({
+    //             debug: false,
+    //             appId: json["appId"],
+    //             timestamp: json["timestamp"],
+    //             nonceStr: json["nonceStr"],
+    //             signature: json["signature"],
+    //             jsApiList: [
+    //                 'checkJsApi',
+    //                 'onMenuShareTimeline',
+    //                 'onMenuShareAppMessage',
+    //                 'onMenuShareQQ',
+    //                 'onMenuShareWeibo',
+    //                 'onMenuShareQZone'
+    //             ]
+    //         });
+    //
+    //         wx.ready(function () {
+    //             wx.onMenuShareAppMessage({
+    //                 title: wxtitle,
+    //                 desc: wxdesc,
+    //                 link: wxlink,
+    //                 imgUrl: wximgUrl,
+    //                 trigger: function (res) {
+    //                 },
+    //                 success: function (res) {
+    //                 },
+    //                 cancel: function (res) {
+    //                 },
+    //                 fail: function (res) {
+    //                 }
+    //             });
+    //
+    //             wx.onMenuShareTimeline({
+    //                 title: wxdesc,
+    //                 link: wxlink,
+    //                 imgUrl: wximgUrl,
+    //                 trigger: function (res) {
+    //                 },
+    //                 success: function (res) {
+    //                 },
+    //                 cancel: function (res) {
+    //                 },
+    //                 fail: function (res) {
+    //                 }
+    //             });
+    //             wx.onMenuShareQQ({
+    //                 title: wxdesc, // 分享标题
+    //                 desc: wxdesc, // 分享描述
+    //                 link: wxlink, // 分享链接
+    //                 imgUrl: wximgUrl, // 分享图标
+    //                 success: function () {
+    //                     // 用户确认分享后执行的回调函数
+    //                 },
+    //                 cancel: function () {
+    //                     // 用户取消分享后执行的回调函数
+    //                 }
+    //             });
+    //             wx.onMenuShareWeibo({
+    //                 title: wxdesc, // 分享标题
+    //                 desc: wxdesc, // 分享描述
+    //                 link: wxlink, // 分享链接
+    //                 imgUrl: wximgUrl, // 分享图标
+    //                 success: function () {
+    //                     // 用户确认分享后执行的回调函数
+    //                 },
+    //                 cancel: function () {
+    //                     // 用户取消分享后执行的回调函数
+    //                 }
+    //             });
+    //             wx.onMenuShareQZone({
+    //                 title: wxdesc, // 分享标题
+    //                 desc: wxdesc, // 分享描述
+    //                 link: wxlink, // 分享链接
+    //                 imgUrl: wximgUrl, // 分享图标
+    //                 success: function () {
+    //                     // 用户确认分享后执行的回调函数
+    //                 },
+    //                 cancel: function () {
+    //                     // 用户取消分享后执行的回调函数
+    //                 }
+    //             });
+    //         });
+    //     },
+    //     complete: function (XMLHttpRequest, textStatus) {
+    //         console.log("complete:" + textStatus);
+    //     },
+    //     error: function (XMLHttpRequest, textStatus, errorThrown) {
+    //         console.log("error:" + textStatus);
+    //     }
+    // });
     /*===================================================================================*/
     /*	OTHER Function
      /*===================================================================================*/

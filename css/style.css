@@ -376,19 +376,19 @@ section.section {
 ============================= */
 
 #section-case, #section-news {
-    background: url(../img/parallax/img4.jpg) fixed;
+    /*background: url(../img/parallax/img4.jpg) fixed;*/
 }
 
 #section-paterner, #section-cantacthome {
-    background: url(../img/parallax/img5.jpg) fixed;
+    /*background: url(../img/parallax/img5.jpg) fixed;*/
 }
 
 #section-advantage, #section-join {
-    background: url(../img/parallax/img2.jpg) fixed;
+    /*background: url(../img/parallax/img2.jpg) fixed;*/
 }
 
 #section-video {
-    background: url(../img/parallax/img3.jpg) fixed;
+    /*background: url(../img/parallax/img3.jpg) fixed;*/
 }
 
 /*===========================
