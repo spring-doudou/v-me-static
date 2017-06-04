@@ -630,13 +630,13 @@
             camera.position.z = 6000;
             scene = new THREE.Scene();
             geometry = new THREE.Geometry();
-            var texture = THREE.ImageUtils.loadTexture('img/cloud10.png', null, animate);
-            texture.magFilter = THREE.LinearMipMapLinearFilter;
-            texture.minFilter = THREE.LinearMipMapLinearFilter;
+//            var texture = THREE.ImageUtils.loadTexture('img/cloud10.png', null, animate);
+//            texture.magFilter = THREE.LinearMipMapLinearFilter;
+//            texture.minFilter = THREE.LinearMipMapLinearFilter;
             var fog = new THREE.Fog(0x4584b4, -100, 3000);
             material = new THREE.ShaderMaterial({
                 uniforms: {
-                    "map": {type: "t", value: texture},
+//                    "map": {type: "t", value: texture},
                     "fogColor": {type: "c", value: fog.color},
                     "fogNear": {type: "f", value: fog.near},
                     "fogFar": {type: "f", value: fog.far}
