@@ -414,7 +414,7 @@ section.section {
     margin-bottom: 0;
     padding-bottom: 0;
     padding-left: 0;
-    padding-right: 100px;
+    padding-right: 0px;
     overflow-y: visible;
     margin-top: 5px !important;
 }
