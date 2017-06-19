@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="shortcut icon" href="img/logo.png">
+    <script src="./js/jquery.js"></script>
     <style>
         .cd-vertical-nav li:first-of-type a::after {
             /* change icon using image sprites */
@@ -107,12 +108,17 @@
     </ul>
 </nav>
 
-
-<div style="min-width:1280px;height:82px; width:100%;background-color:#fede6c; border:0">
+<script>
+    $(document).ready(function () {
+        $("#menu_div").fadeIn(5000);
+    });
+</script>
+<div style="min-width:1280px;height:82px; width:100%;background-color:#fede6c; border:0;display:none;"
+     id="menu_div">
     <div style="min-width:1280px;width: 100%;height: 10px; background-image: url('./image/daohang.png')"></div>
     <div class="navbar" role="navigation"
          style="margin:0 auto; width:1280px;height:62px;line-height: 62px;background-color:#fede6c;">
-        <div class="container" style="width: 1280px">
+        <div class="container" style="width: 1280px;">
             <div class="navbar-header" style="margin-left: 30px">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="fa fa-bars color-white"></span>
@@ -345,6 +351,12 @@
     <!--</div>-->
 </section>
 
+<div style="width:100%; height:1680px;background-color:#fede6c;">
+    <div style="margin: 0 auto; width: 1280px;height: 1680px">
+        <img src="./image/jiance.png">
+    </div>
+</div>
+
 <section id="section-advantage" class="appear section clearfix">
     <div style="min-width:1280px;height:800px; width:100%;background-color:#fede6c; border-bottom:2px dashed #674925; border-top:2px dashed #674925; ">
         <div style="padding-top:160px;width: 1280px; height: 800px; margin: 0 auto; background: url(./image/advantage-bg.png) center no-repeat;">
@@ -492,7 +504,7 @@
     </div>
 </section>-->
 <script src="./js/modernizr.min.js"></script>
-<script src="./js/jquery.js"></script>
+
 <script src="./js/jquery.easing.1.3.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/skrollr.min.js"></script>
@@ -522,6 +534,11 @@
 
 
 
+
+
+
+
+
 </script>
 <script id="fs" type="x-shader/x-fragment">
 			uniform sampler2D map;
@@ -537,6 +554,11 @@
 				gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
 
 			}
+
+
+
+
+
 
 
 
