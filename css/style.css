@@ -1,5 +1,5 @@
 /* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+/*@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');*/
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
@@ -359,7 +359,7 @@ section.section {
     margin: auto;
     width: 150px;
     height: 51px;
-    background: url(../img/title-top.png) no-repeat;
+    /*background: url(../img/title-top.png) no-repeat;*/
 }
 
 .section-subheader {
@@ -1738,7 +1738,7 @@ Vertical navigation
     }
 
     .firstcar {
-        background-image: url(../img/slide8.jpg);
+        /*background-image: url(../img/slide8.jpg);*/
     }
 
     #sky {
@@ -1752,7 +1752,7 @@ Vertical navigation
     .abouthome {
         height: 350px;
         overflow: hidden;
-        background-image: url(../img/slide7.jpg);
+        /*background-image: url(../img/slide7.jpg);*/
     }
 
     .cantacthome {
